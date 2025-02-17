@@ -4,7 +4,7 @@
  */
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "mute-wave-76eb",
+  "name": "cuantomeroban",
   "main": ".open-next/worker.js",
   "compatibility_date": "2024-11-01",
   "compatibility_flags": [
