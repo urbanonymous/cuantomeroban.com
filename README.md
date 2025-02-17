@@ -1,4 +1,4 @@
-# Cuantomeroban.com
+# Next.js Framework Starter
 
 <!-- dash-content-start -->
 
@@ -9,10 +9,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Outside of this repo, you can start a new project with this template using [C3](https://developers.cloudflare.com/pages/get-started/c3/) (the `create-cloudflare` CLI):
 
 ```bash
-npm create cloudflare@latest -- --template=cloudflare/templates/next-starter-template
+npm create cloudflare@latest -- --template=cloudflare/templates/shrill-cherry-fd24
 ```
 
-A live public deployment of this template is available at [https://next-starter-template.templates.workers.dev](https://next-starter-template.templates.workers.dev)
+A live public deployment of this template is available at [https://shrill-cherry-fd24.templates.workers.dev](https://shrill-cherry-fd24.templates.workers.dev)
 
 ## Getting Started
 
