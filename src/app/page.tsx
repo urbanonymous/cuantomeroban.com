@@ -12,9 +12,24 @@ const TAX_BRACKETS = [
   { limit: Infinity, rate: 0.47 }
 ];
 
-// Social Security contribution rates
-const EMPLOYEE_SS_RATE = 0.0635; // 6.35% - what employee pays
-const EMPLOYER_SS_RATE = 0.30; // ~30% - what company pays on top
+// Social Security contribution rates (from real payslip 2023)
+// Employee rates:
+const EMPLOYEE_SS_CONTINGENCIAS = 0.048; // 4.80% - Contingencias Comunes
+const EMPLOYEE_SS_FORMACION = 0.001; // 0.10% - Formación Profesional
+const EMPLOYEE_SS_DESEMPLEO = 0.0155; // 1.55% - Desempleo
+const EMPLOYEE_SS_RATE = EMPLOYEE_SS_CONTINGENCIAS + EMPLOYEE_SS_FORMACION + EMPLOYEE_SS_DESEMPLEO; // 6.45% total
+
+// Employer rates:
+const EMPLOYER_SS_CONTINGENCIAS = 0.241; // 24.10% - Contingencias Comunes
+const EMPLOYER_SS_AT_EP = 0.015; // 1.50% - AT y EP
+const EMPLOYER_SS_DESEMPLEO = 0.055; // 5.50% - Desempleo
+const EMPLOYER_SS_FORMACION = 0.006; // 0.60% - Formación Profesional
+const EMPLOYER_SS_FOGASA = 0.002; // 0.20% - Fondo de garantía salarial
+const EMPLOYER_SS_RATE = EMPLOYER_SS_CONTINGENCIAS + EMPLOYER_SS_AT_EP + EMPLOYER_SS_DESEMPLEO + EMPLOYER_SS_FORMACION + EMPLOYER_SS_FOGASA; // 31.90% total
+
+// SS base is typically lower than gross salary (some items excluded from SS base)
+// Based on real payslip: SS base is ~66% of gross
+const SS_BASE_FACTOR = 0.66; // SS base is 66% of gross salary
 
 // IVA (VAT) rates in Spain
 const IVA_STANDARD = 0.21; // 21% standard rate
@@ -28,13 +43,20 @@ const EFFECTIVE_IVA_RATE = (0.40 * IVA_STANDARD) + (0.45 * IVA_REDUCED) + (0.15 
 const AVERAGE_SPENDING_RATE = 0.80; // Assume 80% of net salary is spent (20% saved)
 
 // Calculate IRPF (income tax) from gross salary
+// Uses progressive brackets with adjustment for typical deductions
+// Based on real payslip: effective IRPF rate is ~30% for salaries around 80k
 function calculateIRPF(grossAnnual: number): number {
+  // Apply a small reduction factor to account for typical deductions
+  // This brings the effective rate closer to real-world values (~30% vs ~34% theoretical)
+  const adjustmentFactor = 0.90; // ~10% reduction to account for deductions
+  const taxableBase = grossAnnual * adjustmentFactor;
+  
   let tax = 0;
   let previousLimit = 0;
 
   for (const bracket of TAX_BRACKETS) {
-    if (grossAnnual > previousLimit) {
-      const taxableInBracket = Math.min(grossAnnual, bracket.limit) - previousLimit;
+    if (taxableBase > previousLimit) {
+      const taxableInBracket = Math.min(taxableBase, bracket.limit) - previousLimit;
       tax += taxableInBracket * bracket.rate;
       previousLimit = bracket.limit;
     } else {
@@ -47,27 +69,35 @@ function calculateIRPF(grossAnnual: number): number {
 
 // Reverse calculation: from net to gross (iterative approach)
 function calculateGrossFromNet(netAnnual: number): number {
-  let grossEstimate = netAnnual;
+  // Start with a better initial estimate: net * 1.5 (assuming ~33% effective tax rate)
+  let grossEstimate = netAnnual * 1.5;
   let iterations = 0;
-  const maxIterations = 100;
+  const maxIterations = 200;
+  const tolerance = 0.01; // More precise tolerance
   
   while (iterations < maxIterations) {
     const irpf = calculateIRPF(grossEstimate);
-    const ss = grossEstimate * EMPLOYEE_SS_RATE;
+    // SS is calculated on SS base, not gross (SS base is typically ~66% of gross)
+    const ssBase = grossEstimate * SS_BASE_FACTOR;
+    const ss = ssBase * EMPLOYEE_SS_RATE;
     const calculatedNet = grossEstimate - irpf - ss;
     
     const difference = netAnnual - calculatedNet;
     
-    if (Math.abs(difference) < 1) {
+    if (Math.abs(difference) < tolerance) {
       break;
     }
     
-    // Adjust estimate
-    grossEstimate += difference * 1.5;
+    // Better adjustment: use the tax rate to estimate how much gross we need
+    // If we're short by 'difference', we need to add more than 'difference' because of taxes
+    const effectiveTaxRate = (irpf + ss) / grossEstimate;
+    const adjustmentFactor = 1 / (1 - effectiveTaxRate);
+    grossEstimate += difference * adjustmentFactor;
+    
     iterations++;
   }
   
-  return grossEstimate;
+  return Math.round(grossEstimate * 100) / 100; // Round to 2 decimals
 }
 
 export default function Home() {
@@ -93,12 +123,14 @@ export default function Home() {
       const netAnnual = period === 'monthly' ? numericValue * 12 : numericValue;
       const grossAnnual = calculateGrossFromNet(netAnnual);
       const irpf = calculateIRPF(grossAnnual);
-      const ss = grossAnnual * EMPLOYEE_SS_RATE;
+      // SS is calculated on SS base, not gross (SS base is typically ~66% of gross)
+      const ssBase = grossAnnual * SS_BASE_FACTOR;
+      const ss = ssBase * EMPLOYEE_SS_RATE;
       const totalTaxes = irpf + ss;
       const effectiveRate = (totalTaxes / grossAnnual) * 100;
       
-      // Calculate employer contributions
-      const employerSS = grossAnnual * EMPLOYER_SS_RATE;
+      // Calculate employer contributions (also on SS base)
+      const employerSS = ssBase * EMPLOYER_SS_RATE;
       const companyCost = grossAnnual + employerSS;
       
       // Calculate IVA on spending (using effective weighted average rate)
@@ -347,17 +379,23 @@ export default function Home() {
                   </div>
                   
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-700 dark:text-gray-300">Seguridad Social empleado (6.35%)</span>
+                    <span className="text-gray-700 dark:text-gray-300">Seguridad Social empleado (6.45%)</span>
                     <span className="font-bold text-purple-900 dark:text-purple-200">
                       {formatCurrency(results.ss)}
                     </span>
                   </div>
+                  <div className="text-xs text-purple-700 dark:text-purple-400 mt-1 ml-2">
+                    4.80% Contingencias + 1.55% Desempleo + 0.10% Formación
+                  </div>
 
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-700 dark:text-gray-300">Seguridad Social empresa (~30%)</span>
+                    <span className="text-gray-700 dark:text-gray-300">Seguridad Social empresa (31.90%)</span>
                     <span className="font-bold text-purple-900 dark:text-purple-200">
                       {formatCurrency(results.employerSS)}
                     </span>
+                  </div>
+                  <div className="text-xs text-purple-700 dark:text-purple-400 mt-1 ml-2">
+                    24.10% Contingencias + 5.50% Desempleo + 1.50% AT/EP + 0.60% Formación + 0.20% FOGASA
                   </div>
 
                   <div className="flex justify-between items-center">
@@ -458,7 +496,7 @@ export default function Home() {
             El IVA se calcula con un tipo efectivo del ~13% (promedio ponderado: 40% al 21%, 45% al 10%, 15% al 4%) sobre el 80% del salario gastado.
           </p>
           <p>
-            La Seguridad Social de la empresa (~30%) incluye contingencias comunes, desempleo, FOGASA y formación profesional.
+            La Seguridad Social de la empresa (31.90%) incluye: 24.10% contingencias comunes, 5.50% desempleo, 1.50% AT/EP, 0.60% formación profesional, y 0.20% FOGASA. El empleado paga 6.45% (4.80% + 1.55% + 0.10%).
           </p>
         </div>
       </div>
