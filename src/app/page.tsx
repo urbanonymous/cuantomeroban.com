@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 // Spanish IRPF tax brackets for 2024 (state tax)
@@ -175,6 +176,14 @@ export default function Home() {
       <div className="container mx-auto px-4 py-12 max-w-4xl">
         {/* Header */}
         <div className="text-center mb-12">
+          <div className="flex justify-center mb-4">
+            <Link
+              href="/blog"
+              className="text-sm font-semibold text-indigo-600 dark:text-indigo-300 hover:underline"
+            >
+              Ir al blog fiscal →
+            </Link>
+          </div>
           <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
             ¿Cuánto me roban?
           </h1>
@@ -185,6 +194,28 @@ export default function Home() {
             Descubre cuánto pagas en impuestos según tu salario neto
         </p>
       </div>
+
+        {/* Blog teaser */}
+        <section className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-8 mb-8 border border-indigo-100 dark:border-gray-700">
+          <div className="text-center">
+            <p className="text-xs uppercase tracking-widest text-indigo-500 font-semibold mb-3">
+              Blog para expats en Espana
+            </p>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+              Impuestos, IRPF e IVA explicados en claro
+            </h2>
+            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-6">
+              Articulos sobre cuanto se paga en impuestos, comparativas con otros paises
+              y consejos antes de mudarte.
+            </p>
+            <Link
+              href="/blog"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition-colors"
+            >
+              Ir al blog
+            </Link>
+          </div>
+        </section>
 
         {/* Calculator Card */}
         <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-8 mb-8">
@@ -499,6 +530,15 @@ export default function Home() {
             La Seguridad Social de la empresa (31.90%) incluye: 24.10% contingencias comunes, 5.50% desempleo, 1.50% AT/EP, 0.60% formación profesional, y 0.20% FOGASA. El empleado paga 6.45% (4.80% + 1.55% + 0.10%).
           </p>
         </div>
+
+        <footer className="mt-10 text-center text-sm text-gray-500 dark:text-gray-400">
+          <Link
+            href="/blog"
+            className="font-semibold text-indigo-600 dark:text-indigo-300 hover:underline"
+          >
+            Blog fiscal para expats en España
+          </Link>
+        </footer>
       </div>
     </main>
   );
