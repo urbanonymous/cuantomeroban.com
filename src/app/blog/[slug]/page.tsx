@@ -128,7 +128,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
           <div className="mt-10 bg-indigo-50 dark:bg-indigo-500/10 rounded-xl p-6">
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-              Calcula tu neto real en Espana
+              Calcula tu neto real en España
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-4">
               Usa la calculadora para estimar IRPF, Seguridad Social e IVA segun tu salario neto.

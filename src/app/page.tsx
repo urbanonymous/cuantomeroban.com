@@ -199,7 +199,7 @@ export default function Home() {
         <section className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-8 mb-8 border border-indigo-100 dark:border-gray-700">
           <div className="text-center">
             <p className="text-xs uppercase tracking-widest text-indigo-500 font-semibold mb-3">
-              Blog para expats en Espana
+              Blog para expats en España
             </p>
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               Impuestos, IRPF e IVA explicados en claro

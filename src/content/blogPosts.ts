@@ -18,28 +18,28 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: 'impuestos-espana-expats-cuanto-se-paga',
-    title: 'Impuestos en Espana para expats: cuanto se paga y por que parece tanto',
+    title: 'Impuestos en España para expats: cuanto se paga y por que parece tanto',
     description:
-      'Guia clara sobre IRPF, Seguridad Social e IVA en Espana para expats. Incluye ejemplos y ciudades clave como Madrid, Barcelona y Valencia.',
+      'Guia clara sobre IRPF, Seguridad Social e IVA en España para expats. Incluye ejemplos y ciudades clave como Madrid, Barcelona y Valencia.',
     date: '2026-01-14',
     readingMinutes: 8,
     keywords: [
-      'impuestos en Espana',
+      'impuestos en España',
       'IRPF expats',
       'Seguridad Social',
-      'IVA Espana',
-      'mudarse a Espana',
+      'IVA España',
+      'mudarse a España',
       'salario neto',
       'residencia fiscal'
     ],
     cityMentions: ['Madrid', 'Barcelona', 'Valencia', 'Malaga', 'Sevilla', 'Bilbao'],
     hero:
-      'Si vienes a Espana por trabajo, el primer shock suele ser el IRPF y la Seguridad Social. Aqui tienes el mapa completo en lenguaje sencillo.',
+      'Si vienes a España por trabajo, el primer shock suele ser el IRPF y la Seguridad Social. Aqui tienes el mapa completo en lenguaje sencillo.',
     content: [
       {
         type: 'paragraph',
         text:
-          'Para muchos expats, el primer mes en Espana es un contraste: buen clima y calidad de vida, pero una nomina que baja mas de lo esperado. Esto no es magia, es IRPF + Seguridad Social + IVA.'
+          'Para muchos expats, el primer mes en España es un contraste: buen clima y calidad de vida, pero una nomina que baja mas de lo esperado. Esto no es magia, es IRPF + Seguridad Social + IVA.'
       },
       {
         type: 'heading',
@@ -48,7 +48,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'paragraph',
         text:
-          'Si pasas mas de 183 dias al ano en Espana o tu centro de intereses economicos esta aqui, normalmente eres residente fiscal. Eso afecta a como tributas tu renta mundial.'
+          'Si pasas mas de 183 dias al ano en España o tu centro de intereses economicos esta aqui, normalmente eres residente fiscal. Eso afecta a como tributas tu renta mundial.'
       },
       {
         type: 'heading',
@@ -98,15 +98,15 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'salario-neto-bruto-espana-expats',
-    title: 'Salario neto vs bruto en Espana: guia rapida para expats',
+    title: 'Salario neto vs bruto en España: guia rapida para expats',
     description:
-      'Entiende la diferencia entre salario bruto y neto en Espana, con ejemplos y claves para negociar ofertas de trabajo como expat.',
+      'Entiende la diferencia entre salario bruto y neto en España, con ejemplos y claves para negociar ofertas de trabajo como expat.',
     date: '2026-01-14',
     readingMinutes: 7,
     keywords: [
       'salario neto',
       'salario bruto',
-      'nomina Espana',
+      'nomina España',
       'IRPF',
       'negociar salario'
     ],
@@ -117,7 +117,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'paragraph',
         text:
-          'En Espana, el salario bruto es el punto de partida. El neto es lo que llega a tu cuenta. La diferencia es IRPF + Seguridad Social.'
+          'En España, el salario bruto es el punto de partida. El neto es lo que llega a tu cuenta. La diferencia es IRPF + Seguridad Social.'
       },
       {
         type: 'heading',
@@ -158,14 +158,14 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'comparativa-impuestos-espana-portugal-andorra-uk',
-    title: 'Comparativa fiscal: Espana vs Portugal, Andorra y otros destinos',
+    title: 'Comparativa fiscal: España vs Portugal, Andorra y otros destinos',
     description:
-      'Comparacion cualitativa para expats entre Espana y otros paises: Portugal, Andorra, Reino Unido, Alemania y Paises Bajos.',
+      'Comparacion cualitativa para expats entre España y otros paises: Portugal, Andorra, Reino Unido, Alemania y Paises Bajos.',
     date: '2026-01-14',
     readingMinutes: 9,
     keywords: [
       'comparativa impuestos',
-      'Espana vs Portugal',
+      'España vs Portugal',
       'Andorra impuestos',
       'expats Europa',
       'mudarse de pais'
@@ -177,7 +177,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'paragraph',
         text:
-          'Es normal comparar Espana con Portugal o Andorra, pero la realidad fiscal depende de tus ingresos, tu tipo de contrato y tu estatus de residencia.'
+          'Es normal comparar España con Portugal o Andorra, pero la realidad fiscal depende de tus ingresos, tu tipo de contrato y tu estatus de residencia.'
       },
       {
         type: 'heading',
@@ -222,13 +222,13 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'autonomos-en-espana-impuestos-y-cuotas',
-    title: 'Autonomos en Espana: impuestos, cuotas y errores comunes',
+    title: 'Autonomos en España: impuestos, cuotas y errores comunes',
     description:
-      'Resumen para expats que trabajan como autonomos en Espana: cuotas, IRPF, IVA y consejos para evitar sorpresas.',
+      'Resumen para expats que trabajan como autonomos en España: cuotas, IRPF, IVA y consejos para evitar sorpresas.',
     date: '2026-01-14',
     readingMinutes: 10,
     keywords: [
-      'autonomos Espana',
+      'autonomos España',
       'cuota autonomo',
       'IVA autonomos',
       'IRPF autonomo',
@@ -236,7 +236,7 @@ export const blogPosts: BlogPost[] = [
     ],
     cityMentions: ['Barcelona', 'Valencia', 'Malaga'],
     hero:
-      'Ser autonomo en Espana puede ser rentable, pero necesitas planificar impuestos y cuotas desde el primer mes.',
+      'Ser autonomo en España puede ser rentable, pero necesitas planificar impuestos y cuotas desde el primer mes.',
     content: [
       {
         type: 'paragraph',
@@ -286,7 +286,7 @@ export const blogPosts: BlogPost[] = [
       'mudarse por impuestos',
       'residencia fiscal',
       'doble imposicion',
-      'expats Espana',
+      'expats España',
       'power adquisitivo'
     ],
     cityMentions: ['Madrid', 'Barcelona', 'Valencia', 'Sevilla'],
@@ -296,7 +296,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'paragraph',
         text:
-          'Cambiar de pais no es solo cambiar de IRPF. Hay costes de mudanza, vivienda, sanidad y adaptacion. En Espana, el equilibrio calidad de vida vs impuestos es clave.'
+          'Cambiar de pais no es solo cambiar de IRPF. Hay costes de mudanza, vivienda, sanidad y adaptacion. En España, el equilibrio calidad de vida vs impuestos es clave.'
       },
       {
         type: 'heading',

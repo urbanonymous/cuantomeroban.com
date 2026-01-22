@@ -2,9 +2,9 @@ import Link from 'next/link';
 import { blogPosts } from '@/content/blogPosts';
 
 export const metadata = {
-  title: 'Blog de impuestos en Espana para expats | Cuanto me roban',
+  title: 'Blog de impuestos en España para expats | Cuanto me roban',
   description:
-    'Articulos sobre impuestos en Espana para expats: IRPF, Seguridad Social, IVA y comparativas fiscales para decidir donde vivir.',
+    'Articulos sobre impuestos en España para expats: IRPF, Seguridad Social, IVA y comparativas fiscales para decidir donde vivir.',
   alternates: {
     canonical: '/blog'
   }
@@ -23,11 +23,11 @@ export default function BlogIndexPage() {
             Blog fiscal para expats
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Impuestos en Espana, explicados sin humo
+            Impuestos en España, explicados sin humo
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Guia clara sobre IRPF, Seguridad Social, IVA y decisiones de mudanza.
-            Pensado para expats que viven o estan llegando a Espana.
+            Pensado para expats que viven o estan llegando a España.
           </p>
         </header>
 
@@ -73,7 +73,7 @@ export default function BlogIndexPage() {
 
         <section className="mt-16 bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 text-center border border-indigo-100 dark:border-gray-700">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-            Calcula tu salario neto en Espana
+            Calcula tu salario neto en España
           </h2>
           <p className="text-gray-600 dark:text-gray-300 mb-6">
             Usa nuestra calculadora para estimar impuestos, Seguridad Social e IVA.
