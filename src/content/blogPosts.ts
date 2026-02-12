@@ -21,7 +21,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Impuestos en España para expats: cuanto se paga y por que parece tanto',
     description:
       'Guia clara sobre IRPF, Seguridad Social e IVA en España para expats. Incluye ejemplos y ciudades clave como Madrid, Barcelona y Valencia.',
-    date: '2026-01-31',
+    date: '2026-01-14',
     readingMinutes: 8,
     keywords: [
       'impuestos en España',
@@ -101,7 +101,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Salario neto vs bruto en España: guia rapida para expats',
     description:
       'Entiende la diferencia entre salario bruto y neto en España, con ejemplos y claves para negociar ofertas de trabajo como expat.',
-    date: '2026-02-01',
+    date: '2026-01-14',
     readingMinutes: 7,
     keywords: [
       'salario neto',
