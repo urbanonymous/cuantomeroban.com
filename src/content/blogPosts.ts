@@ -21,7 +21,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Impuestos en España para expats: cuanto se paga y por que parece tanto',
     description:
       'Guia clara sobre IRPF, Seguridad Social e IVA en España para expats. Incluye ejemplos y ciudades clave como Madrid, Barcelona y Valencia.',
-    date: '2026-01-14',
+    date: '2026-01-31',
     readingMinutes: 8,
     keywords: [
       'impuestos en España',
@@ -101,7 +101,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Salario neto vs bruto en España: guia rapida para expats',
     description:
       'Entiende la diferencia entre salario bruto y neto en España, con ejemplos y claves para negociar ofertas de trabajo como expat.',
-    date: '2026-01-14',
+    date: '2026-02-01',
     readingMinutes: 7,
     keywords: [
       'salario neto',
@@ -161,7 +161,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Comparativa fiscal: España vs Portugal, Andorra y otros destinos',
     description:
       'Comparacion cualitativa para expats entre España y otros paises: Portugal, Andorra, Reino Unido, Alemania y Paises Bajos.',
-    date: '2026-01-14',
+    date: '2026-02-02',
     readingMinutes: 9,
     keywords: [
       'comparativa impuestos',
@@ -225,7 +225,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Autonomos en España: impuestos, cuotas y errores comunes',
     description:
       'Resumen para expats que trabajan como autonomos en España: cuotas, IRPF, IVA y consejos para evitar sorpresas.',
-    date: '2026-01-14',
+    date: '2026-02-03',
     readingMinutes: 10,
     keywords: [
       'autonomos España',
@@ -280,7 +280,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Mudarte por impuestos: checklist realista para expats',
     description:
       'Checklist para expats que quieren mudarse por impuestos: residencia fiscal, coste oculto y comparacion real de poder adquisitivo.',
-    date: '2026-01-14',
+    date: '2026-02-04',
     readingMinutes: 8,
     keywords: [
       'mudarse por impuestos',
@@ -318,6 +318,417 @@ export const blogPosts: BlogPost[] = [
         type: 'paragraph',
         text:
           'Si tu objetivo es optimizar impuestos, asesora tu caso y usa herramientas de simulacion. Y si buscas calidad de vida, compara ciudades como Valencia o Sevilla con tu destino alternativo.'
+      }
+    ]
+  },
+  {
+    slug: 'mejores-ciudades-espana-expats-impuestos-coste-vida',
+    title: 'Mejores ciudades de Espana para expats: impuestos y coste de vida',
+    description:
+      'Analisis GEO para expats entre Madrid, Barcelona, Valencia, Malaga, Sevilla y Bilbao: cuanto se paga y cuanto rinde tu neto.',
+    date: '2026-02-05',
+    readingMinutes: 8,
+    keywords: [
+      'mejores ciudades Espana expats',
+      'coste de vida Espana',
+      'impuestos Madrid Barcelona Valencia',
+      'vivir en Malaga',
+      'vivir en Sevilla'
+    ],
+    cityMentions: ['Madrid', 'Barcelona', 'Valencia', 'Malaga', 'Sevilla', 'Bilbao'],
+    hero:
+      'No todas las ciudades se sienten igual en tu bolsillo. Tu neto puede rendir mucho mas segun alquiler, transporte y estilo de vida.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'Para expats, elegir ciudad en Espana es casi tan importante como negociar salario. Los impuestos nacionales pesan, pero el coste local define tu calidad de vida.'
+      },
+      {
+        type: 'heading',
+        text: 'Madrid y Barcelona'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Suelen ofrecer mas oportunidades y mejores salarios, pero la vivienda puede comerse gran parte de tu neto mensual.'
+      },
+      {
+        type: 'heading',
+        text: 'Valencia, Malaga y Sevilla'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'En muchas zonas de estas ciudades, el equilibrio entre ingresos y gastos es mas favorable para familias y perfiles remotos.'
+      },
+      {
+        type: 'heading',
+        text: 'Checklist rapido'
+      },
+      {
+        type: 'list',
+        items: [
+          'Compara salario neto y alquiler en la misma hoja.',
+          'Incluye transporte, colegios o coworking si aplica.',
+          'Mide tu ahorro anual real, no solo el sueldo.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'irpf-por-tramos-espana-explicado-facil',
+    title: 'IRPF por tramos en Espana: explicado facil para expats',
+    description:
+      'Aprende como funcionan los tramos de IRPF en Espana y por que subir de tramo no significa perder dinero.',
+    date: '2026-02-06',
+    readingMinutes: 7,
+    keywords: [
+      'IRPF por tramos',
+      'tramos IRPF Espana',
+      'tipo marginal',
+      'tipo efectivo',
+      'expats IRPF'
+    ],
+    cityMentions: ['Madrid', 'Barcelona', 'Valencia'],
+    hero:
+      'Subir de tramo no implica que todo tu salario pague mas. Solo el tramo adicional tributa al nuevo tipo.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'Una confusion frecuente entre expats es creer que ganar mas puede reducir el neto. En un sistema progresivo, cada tramo se grava por separado.'
+      },
+      {
+        type: 'heading',
+        text: 'Tipo marginal vs tipo efectivo'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'El marginal es el porcentaje del ultimo euro ganado. El efectivo es la media total que realmente pagas sobre tu renta.'
+      },
+      {
+        type: 'heading',
+        text: 'Por que importa en la negociacion'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Cuando comparas ofertas en Madrid o Barcelona, usa siempre neto anual estimado y no solo bruto. Asi evitas decisiones basadas en intuicion.'
+      },
+      {
+        type: 'list',
+        items: [
+          'No temas subir de tramo: sigues ganando mas.',
+          'Evalua bonus y stock por separado.',
+          'Haz simulaciones de neto con y sin variable.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'impuestos-para-remote-workers-en-espana',
+    title: 'Impuestos para remote workers en Espana: guia para expats',
+    description:
+      'Que debe revisar un trabajador remoto en Espana: residencia fiscal, doble imposicion, factura internacional e IVA.',
+    date: '2026-02-07',
+    readingMinutes: 9,
+    keywords: [
+      'remote workers Espana',
+      'residencia fiscal remoto',
+      'doble imposicion expats',
+      'freelance internacional',
+      'IVA servicios digitales'
+    ],
+    cityMentions: ['Valencia', 'Malaga', 'Barcelona', 'Palma'],
+    hero:
+      'Trabajar remoto para otro pais desde Espana puede ser perfecto, pero fiscalmente exige orden desde el primer dia.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'Cada vez mas expats viven en ciudades costeras y trabajan para empresas extranjeras. El reto no es tecnico: es fiscal y administrativo.'
+      },
+      {
+        type: 'heading',
+        text: 'Residencia fiscal y 183 dias'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Si resides fiscalmente en Espana, tus obligaciones cambian aunque la empresa pagadora este fuera.'
+      },
+      {
+        type: 'heading',
+        text: 'Doble imposicion'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Comprueba tratados entre Espana y el pais de origen de tus ingresos para evitar tributar dos veces por la misma renta.'
+      },
+      {
+        type: 'heading',
+        text: 'Buenas practicas'
+      },
+      {
+        type: 'list',
+        items: [
+          'Guarda contratos, facturas y certificados de retencion.',
+          'Separa cuenta personal y cuenta profesional.',
+          'Planifica pagos trimestrales y cierre anual.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'ley-beckham-expats-cuando-compensa',
+    title: 'Ley Beckham para expats en Espana: cuando compensa y cuando no',
+    description:
+      'Resumen practico del regimen para desplazados (Ley Beckham): ventajas, limites y casos donde no compensa.',
+    date: '2026-02-08',
+    readingMinutes: 8,
+    keywords: [
+      'Ley Beckham',
+      'regimen impatriados Espana',
+      'expats alta cualificacion',
+      'impuestos no residentes',
+      'mudanza laboral Espana'
+    ],
+    cityMentions: ['Madrid', 'Barcelona', 'Malaga', 'Valencia'],
+    hero:
+      'La Ley Beckham puede reducir la factura fiscal en ciertos perfiles, pero no es universal ni automatica.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'Muchos profesionales internacionales preguntan por este regimen al llegar a Espana. Bien aplicado puede ser muy util, mal evaluado puede salir caro.'
+      },
+      {
+        type: 'heading',
+        text: 'Que suele atraer de este regimen'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'La principal ventaja es un tratamiento fiscal distinto durante un periodo limitado para quienes cumplen requisitos concretos.'
+      },
+      {
+        type: 'heading',
+        text: 'Donde se equivoca la gente'
+      },
+      {
+        type: 'list',
+        items: [
+          'Asumir que aplica a cualquier expat.',
+          'No analizar rentas extranjeras y patrimonio.',
+          'No comparar con tributacion ordinaria a varios anos.'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Antes de decidir, conviene modelar escenarios con asesor fiscal segun tu salario, bonus, acciones y pais de origen.'
+      }
+    ]
+  },
+  {
+    slug: 'impuestos-compra-vivienda-espana-expats',
+    title: 'Impuestos al comprar vivienda en Espana para expats',
+    description:
+      'Guia sobre impuestos al comprar casa en Espana: ITP, IVA, AJD y costes de cierre en ciudades como Madrid y Valencia.',
+    date: '2026-02-09',
+    readingMinutes: 9,
+    keywords: [
+      'comprar vivienda Espana',
+      'ITP',
+      'AJD',
+      'IVA vivienda nueva',
+      'expats inmobiliario Espana'
+    ],
+    cityMentions: ['Madrid', 'Barcelona', 'Valencia', 'Alicante', 'Malaga'],
+    hero:
+      'El precio de la vivienda no es el unico numero importante: los impuestos de compra pueden cambiar por completo tu presupuesto.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'Si compras vivienda en Espana siendo expat, necesitas calcular no solo la hipoteca sino tambien impuestos y gastos de cierre.'
+      },
+      {
+        type: 'heading',
+        text: 'Vivienda nueva vs segunda mano'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'La vivienda nueva suele llevar IVA y AJD. La segunda mano suele tributar por ITP. Los porcentajes varian segun comunidad autonoma.'
+      },
+      {
+        type: 'heading',
+        text: 'Costes a tener en cuenta'
+      },
+      {
+        type: 'list',
+        items: [
+          'Impuesto principal de compra (ITP o IVA/AJD).',
+          'Notaria, registro y gestoria.',
+          'Margen para reformas y mudanza.'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text:
+          'En mercados tensionados como Madrid o Barcelona, planificar estos costes evita quedarte corto en liquidez.'
+      }
+    ]
+  },
+  {
+    slug: 'impuestos-empresa-vs-autonomo-espana-expats',
+    title: 'Empresa o autonomo en Espana: que paga menos impuestos',
+    description:
+      'Comparativa para expats emprendedores entre operar como autonomo o sociedad en Espana, con enfoque practico.',
+    date: '2026-02-10',
+    readingMinutes: 10,
+    keywords: [
+      'autonomo o sociedad Espana',
+      'impuesto sociedades',
+      'IRPF autonomos',
+      'emprender en Espana',
+      'expats business'
+    ],
+    cityMentions: ['Madrid', 'Valencia', 'Malaga', 'Barcelona'],
+    hero:
+      'No existe una respuesta unica: depende de facturacion, gastos, riesgo y horizonte de crecimiento.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'Muchos expats empiezan como autonomos por simplicidad. Cuando crecen ingresos o equipo, valorar una sociedad puede tener sentido.'
+      },
+      {
+        type: 'heading',
+        text: 'Autonomo: simple pero sensible al IRPF'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Es facil de arrancar, pero el beneficio puede escalar rapido en tipos altos de IRPF.'
+      },
+      {
+        type: 'heading',
+        text: 'Sociedad: mas estructura'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Implica contabilidad y obligaciones adicionales, pero da herramientas para planificar retribucion y reinversion.'
+      },
+      {
+        type: 'list',
+        items: [
+          'Compara coste administrativo total anual.',
+          'Revisa responsabilidad legal y riesgo del negocio.',
+          'Haz numeros a 12 y 36 meses, no solo a corto plazo.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'deducciones-fiscales-expats-espana-guia-practica',
+    title: 'Deducciones fiscales para expats en Espana: guia practica',
+    description:
+      'Que deducciones pueden impactar tu IRPF en Espana y como organizar documentos para no pagar de mas.',
+    date: '2026-02-11',
+    readingMinutes: 7,
+    keywords: [
+      'deducciones IRPF Espana',
+      'declaracion renta expats',
+      'ahorro fiscal legal',
+      'gastos deducibles',
+      'documentacion fiscal'
+    ],
+    cityMentions: ['Madrid', 'Barcelona', 'Sevilla', 'Valencia'],
+    hero:
+      'No todo es tipo marginal: una buena organizacion de deducciones puede mejorar mucho tu resultado anual.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'Muchos expats pagan de mas por falta de orden documental. La clave esta en revisar con tiempo posibles deducciones estatales y autonomicas.'
+      },
+      {
+        type: 'heading',
+        text: 'Que preparar durante el ano'
+      },
+      {
+        type: 'list',
+        items: [
+          'Certificados de empresa y retenciones.',
+          'Justificantes de gastos potencialmente deducibles.',
+          'Documentacion de mudanza y residencia, si aplica.'
+        ]
+      },
+      {
+        type: 'heading',
+        text: 'Errores que encarecen la renta'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Presentar tarde, no reconciliar datos o no revisar borrador puede traducirse en pagos innecesarios.'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Con una revision anual y simulaciones trimestrales puedes evitar sustos y mantener mejor liquidez.'
+      }
+    ]
+  },
+  {
+    slug: 'jubilacion-ahorro-fiscal-espana-expats',
+    title: 'Jubilacion y ahorro fiscal en Espana para expats',
+    description:
+      'Como planificar ahorro de largo plazo en Espana si eres expat: fiscalidad, liquidez y estrategias prudentes.',
+    date: '2026-02-12',
+    readingMinutes: 8,
+    keywords: [
+      'jubilacion expats Espana',
+      'ahorro fiscal largo plazo',
+      'planificacion financiera expats',
+      'impuestos y patrimonio',
+      'residencia fiscal futura'
+    ],
+    cityMentions: ['Madrid', 'Bilbao', 'Valencia', 'Malaga'],
+    hero:
+      'Pensar en impuestos solo en el presente suele ser caro. La optimizacion real se construye a 10 o 20 anos.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'Si tu proyecto de vida en Espana es estable, conviene integrar fiscalidad, ahorro e inversion en una estrategia unica.'
+      },
+      {
+        type: 'heading',
+        text: 'Tres capas de planificacion'
+      },
+      {
+        type: 'list',
+        items: [
+          'Liquidez mensual para imprevistos y pagos fiscales.',
+          'Ahorro de medio plazo para vivienda o familia.',
+          'Inversion de largo plazo adaptada a tu residencia futura.'
+        ]
+      },
+      {
+        type: 'heading',
+        text: 'Enfoque para expats'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Como tu residencia puede cambiar, diseña una cartera que soporte movimientos internacionales sin friccion fiscal excesiva.'
       }
     ]
   }
