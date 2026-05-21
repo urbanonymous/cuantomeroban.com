@@ -731,6 +731,226 @@ export const blogPosts: BlogPost[] = [
           'Como tu residencia puede cambiar, diseña una cartera que soporte movimientos internacionales sin friccion fiscal excesiva.'
       }
     ]
+  },
+  {
+    slug: 'impuesto-patrimonio-espana-expats',
+    title: 'Impuesto de patrimonio en Espana: ¿te afecta como expat?',
+    description:
+      'Guia sobre el impuesto de patrimonio en Espana para expats. Como varia segun la region y estrategias basicas de planificacion.',
+    date: '2026-02-15',
+    readingMinutes: 9,
+    keywords: [
+      'impuesto de patrimonio',
+      'patrimonio Espana expats',
+      'tributacion riqueza',
+      'impuestos Madrid vs Barcelona',
+      'planificacion fiscal'
+    ],
+    cityMentions: ['Madrid', 'Barcelona', 'Valencia', 'Sevilla', 'Malaga'],
+    hero:
+      'El impuesto de patrimonio en Espana puede ser una gran sorpresa para expats de rentas altas o con activos significativos. Dependiendo de la region donde vivas, la diferencia puede ser abismal.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'A diferencia de otros paises de la UE que han eliminado este tributo, Espana mantiene un impuesto sobre la riqueza neta global. Esto significa que si eres residente fiscal, tus activos en todo el mundo se tienen en cuenta.'
+      },
+      {
+        type: 'heading',
+        text: 'La gran diferencia regional: Madrid y Andalucia vs Cataluña'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Las comunidades autonomas tienen competencias para modificar el minimo exento y las tarifas. Por ejemplo, Madrid y Andalucia ofrecen bonificaciones de casi el 100%, mientras que en Cataluña o la Comunidad Valenciana se empieza a tributar desde importes mas bajos y con tipos progresivos.'
+      },
+      {
+        type: 'heading',
+        text: '¿Cual es el minimo exento en Espana?'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'A nivel estatal, el minimo exento general es de 700.000 euros, mas 300.000 euros adicionales para la vivienda habitual. Sin embargo, comunidades como Cataluña rebajan este minimo exento a 500.000 euros, haciendo que mas personas tengan que declarar.'
+      },
+      {
+        type: 'heading',
+        text: 'Recomendaciones antes de mudarte'
+      },
+      {
+        type: 'list',
+        items: [
+          'Elige bien tu region: el lugar donde establezcas tu residencia fiscal determina tu factura por patrimonio.',
+          'Haz inventario de activos globales: cuentas bancarias, inmuebles, acciones y participaciones societarias.',
+          'Ojo con el Impuesto de Solidaridad: para patrimonios netos superiores a 3 millones de euros, existe un gravamen estatal armonizado.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'criptomonedas-impuestos-espana-expats',
+    title: 'Fiscalidad de criptomonedas en Espana: guia basica para expats',
+    description:
+      'Como tributan las criptomonedas en Espana, la obligacion de declararlas y que modelos debes conocer como el Modelo 721.',
+    date: '2026-02-20',
+    readingMinutes: 8,
+    keywords: [
+      'criptomonedas Espana',
+      'impuestos crypto',
+      'declarar Bitcoin',
+      'Modelo 721',
+      'expats cripto'
+    ],
+    cityMentions: ['Barcelona', 'Madrid', 'Valencia'],
+    hero:
+      'Si tienes Bitcoin u otras criptomonedas y te mudas a Espana, Hacienda querra saber de ellas. La normativa se ha endurecido notablemente en los ultimos años.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'En Espana, las ganancias derivadas del intercambio, venta o uso de criptomonedas tributan en la base imponible del ahorro. Esto incluye tanto la conversion a dinero fiat como el intercambio de una cripto por otra.'
+      },
+      {
+        type: 'heading',
+        text: 'Tramos del impuesto sobre el ahorro'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Los tipos impositivos para las ganancias patrimoniales por criptomonedas van desde el 19% para los primeros 6.000 euros de ganancia, hasta el 28% para ganancias que superen los 300.000 euros.'
+      },
+      {
+        type: 'heading',
+        text: 'La obligacion de informar: Modelo 721'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Si custodias criptomonedas en plataformas de intercambio situadas fuera de Espana (como Binance o Coinbase internacional) y el valor conjunto de tus monedas supera los 50.000 euros a 31 de diciembre, debes presentar el Modelo 721.'
+      },
+      {
+        type: 'heading',
+        text: 'Checklist para inversores cripto'
+      },
+      {
+        type: 'list',
+        items: [
+          'Usa el metodo FIFO (First In, First Out) para calcular tus ganancias y perdidas de forma correcta.',
+          'Registra cada transaccion: Hacienda exige documentar el precio de compra y venta de cada operacion.',
+          'Las perdidas tambien se declaran: puedes compensar las perdidas con ganancias del mismo año o de los 4 años siguientes.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'modelo-720-espana-declaracion-bienes-extranjero',
+    title: 'El temido Modelo 720 en Espana: que es y como evitar multas',
+    description:
+      'Guia sobre el Modelo 720 para expats: cuentas, inversiones y propiedades en el extranjero. Quien debe declararlo y plazos.',
+    date: '2026-02-25',
+    readingMinutes: 9,
+    keywords: [
+      'Modelo 720',
+      'bienes en el extranjero',
+      'declarar cuentas fuera',
+      'expats España impuestos',
+      'evitar multas Hacienda'
+    ],
+    cityMentions: ['Madrid', 'Barcelona', 'Valencia', 'Alicante'],
+    hero:
+      'El Modelo 720 es una de las declaraciones que mas asusta a los extranjeros que se mudan a Espana. No es un impuesto directo, sino una obligacion informativa sobre tus bienes en el exterior.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'Si eres residente fiscal en Espana, estas obligado a declarar los bienes y derechos situados en el extranjero cuando superen ciertos limites. El objetivo de la Agencia Tributaria es prevenir el fraude fiscal.'
+      },
+      {
+        type: 'heading',
+        text: 'Los tres bloques de bienes'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'El Modelo 720 se divide en tres bloques independientes: 1) cuentas bancarias en el extranjero, 2) valores, derechos, seguros y rentas depositados o gestionados fuera, y 3) bienes inmuebles. Debes declarar cada bloque que supere individualmente los 50.000 euros.'
+      },
+      {
+        type: 'heading',
+        text: 'Cambios recientes y multas'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Anteriormente, no presentar este modelo acarreaba multas desproporcionadas y la no prescripción de la renta no declarada. Tras una sentencia del Tribunal de Justicia de la UE, las multas se han equiparado al régimen general, pero siguen existiendo sanciones por presentarlo fuera de plazo.'
+      },
+      {
+        type: 'heading',
+        text: 'Puntos clave a recordar'
+      },
+      {
+        type: 'list',
+        items: [
+          'El plazo de presentacion es del 1 de enero al 31 de marzo de cada año.',
+          'Solo debes volver a presentarlo en años siguientes si el valor de algun bloque de bienes se incrementa en mas de 20.000 euros respecto a la ultima declaracion.',
+          'Aplica a residentes fiscales, por lo que los expats bajo la Ley Beckham suelen estar exentos de declarar la mayoria de bienes extranjeros.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'ley-beckham-autonomos-emprendedores-espana',
+    title: 'Ley Beckham para autonomos y emprendedores: ¿es posible hoy?',
+    description:
+      'Analisis de la ampliacion de la Ley Beckham para nomadas digitales, administradores y emprendedores en Espana.',
+    date: '2026-03-02',
+    readingMinutes: 8,
+    keywords: [
+      'Ley Beckham autonomos',
+      'nomada digital España',
+      'impuestos emprendedores',
+      'regimen especial impatriados',
+      'Beckham law digital nomad'
+    ],
+    cityMentions: ['Madrid', 'Barcelona', 'Malaga', 'Valencia'],
+    hero:
+      'Historicamente, el regimen especial de impatriados (Ley Beckham) estaba reservado exclusivamente a empleados asalariados. Sin embargo, la reciente Ley de Startups ha ampliado considerablemente el abanico de beneficiarios.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'La gran ventaja de la Ley Beckham es que permite a los nuevos residentes tributar a un tipo fijo del 24% hasta los primeros 600.000 euros de ingresos del trabajo, en lugar de los tipos progresivos generales de IRPF que pueden superar el 47%.'
+      },
+      {
+        type: 'heading',
+        text: 'Nuevos perfiles admitidos: emprendedores y nomadas digitales'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Con la reforma, ahora pueden acogerse a este regimen: 1) profesionales altamente cualificados que realicen actividades economicas (autonomos) prestando servicios a empresas emergentes, 2) nomadas digitales con visado de teletrabajo de caracter internacional, y 3) administradores de empresas, sin importar su porcentaje de participacion en la compañia (salvo que sea una sociedad patrimonial).'
+      },
+      {
+        type: 'heading',
+        text: 'Reduccion del periodo de no residencia'
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Otro cambio muy favorable es que el requisito de no haber sido residente fiscal en Espana se ha reducido de 10 a 5 años. Esto facilita la vuelta de profesionales que se marcharon al extranjero recientemente.'
+      },
+      {
+        type: 'heading',
+        text: 'Condiciones y plazos'
+      },
+      {
+        type: 'list',
+        items: [
+          'Debes solicitar la adhesion al regimen dentro de los 6 meses siguientes al inicio de la actividad o relacion laboral.',
+          'La duracion del beneficio fiscal es del año de mudanza mas los 5 años siguientes.',
+          'Permite tambien incluir en el regimen especial al conyuge y a los hijos menores de 25 años bajo ciertas condiciones.'
+        ]
+      }
+    ]
   }
 ];
 
